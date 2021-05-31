@@ -10,17 +10,25 @@
         @import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
         *{
             box-sizing: border-box;
+        
         }
         body{
-            margin: 0px;
+            margin:0px;
             background-color:white;
+           
+            
         }
         nav {
+          
             background-color: #594848;
             width: 100%;
-            padding:10px
-            
-            }
+            padding: 10px;
+        }
+        .nav{
+            position: fixed;
+            top:0px;
+        }
+        
         ul{
           margin: 0px;
           padding: 0px;
@@ -28,14 +36,15 @@
         }
         li{
             display: inline-block;
-            
+
         }
+        
         nav a{
             text-align: center;
             width: 120px;
             text-decoration: none;
             padding: 10px 30px;
-            font-size: 20px;
+            
             color:wheat;
             font-family: 'Stint Ultra Condensed', cursive;
             font-size: 30px;
@@ -47,7 +56,7 @@
     /*-------- sekil dizayni---------- */
             .contain{
                 max-width: 1200px;
-                margin: 5px 30px;
+                margin: 50px 30px;
                 background-color:thistle;
                 }
                 
@@ -79,7 +88,7 @@
 
 </head>
 <body>
-    <nav>
+    <nav class="nav">
         <ul>
             <li><a href="#">HOME</a></li>
             <li><a href="#">GALLERY</a></li>
