@@ -6,7 +6,7 @@
 }
 body{
     background-color: rgb(74, 97, 202);
-    font-family: 'Roboto', sans-serif;
+    font-family: font-family: 'Hammersmith One', sans-serif;
 }
 .main{
     max-width: 94%;
@@ -25,7 +25,7 @@ header{
 .menu ul{
     display: flex;
     justify-content: space-around;
-    font-size: 20px;
+    font-size: 15px;
     list-style: none;
 
 
@@ -165,7 +165,120 @@ header{
     width: 60%;
     background-color:rgb(74, 97, 202);
 }
-.skill.container h1{
+.skill.container h2{
     padding: 15px 0px;
     text-align: center;
+}
+/* whati do */
+.whatidotitle{
+    color: white;
+    margin-top: 70px;
+}
+.whatido{
+    margin-top: 30px;
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 300px;
+    font-weight: bold;
+}
+.whatidofront{
+    display:flex;
+    width: 49%;
+    height: 100vh;
+    margin-right: 15px;
+}
+.iconfront{
+    width: 45px;
+    height: 100vh;
+    margin-right: 15px;
+}
+.iconfront img{
+    width: 36px;
+    height: 33px;
+}
+.textfront h3{
+    margin-bottom: 20px;
+}
+p{
+    font-size: 15px;
+    color: rgba(191, 191, 199, 0.938);
+}
+
+.whatidoback{
+    display:flex;
+    width: 49%;
+    height: 100vh;
+}
+/* testimonial--------------------- */
+.testimonial{
+    font-weight: bold;
+}
+.testimonialtitle{
+    color:white;
+    margin-bottom: 20px;
+    
+}
+.testimonial{
+    width: 100%;
+    height: 250px;
+    display: flex;
+}
+.testimonial-items-left{
+    width: 517px;
+    margin-right: 25px;
+}
+.testimonial-item{
+    padding: 30px;
+    margin-bottom: 10px;
+}
+.testimonial-content{
+    position: relative;
+    padding: 30px 20px 20px 60px;
+    border-radius: 8px;
+    border: 2px solid #444;
+}
+.testimonial-picture{
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 80px;
+    height: 80px;
+}
+.testimonial-picture img{
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+}
+/* text */
+.testimonial-text p{
+    font-size: 14px;
+    color: rgba(191, 191, 199, 0.938);
+    margin: 0 0 10px;
+}
+.testimonial-author{
+    margin: 0 0 2px;
+    font-size: 14px;
+    color:rgba(191, 191, 199, 0.938);
+   ;
+}
+
+.testimonial-author h5{
+    color: white;
+    font-size: 15px;
+    padding: 5px 0px;
+}
+.testimonial-icon{
+    position: absolute;
+    left: 15px;
+    bottom: 30px;
+  
+}
+.testimonial-icon img{
+    width: 20px;
+    height: 20px;
+}
+.testimonial-items-right{
+    width: 517px;
+    
 }
