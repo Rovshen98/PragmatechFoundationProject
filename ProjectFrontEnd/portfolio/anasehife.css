@@ -6,7 +6,7 @@
 }
 body{
     background-color: rgb(74, 97, 202);
-    font-family: font-family: 'Hammersmith One', sans-serif;
+    font-family: 'Hammersmith One', sans-serif;
 }
 .main{
     max-width: 94%;
@@ -106,16 +106,26 @@ header{
 
 .skill.container{
     margin-top: 50px;
-    display:flex;
+   
     width: 100%;
     height: 280px;
+    color: white;
+}
+.oktava h2{
+    text-align: start;
+    padding:15px 0px;
+}
+.oktava-two{
+    width: 100%;
+    display:flex;
+    flex-direction:row
 }
 .do,.re{
     width: 45%;
-    color: white;
+    
 }
 .re{
-    margin:58px 0px 0px 57px;
+    margin-left:57px;
 }
 .skill.git{
     padding:15px 0px;
@@ -172,10 +182,7 @@ header{
     width: 60%;
     background-color:rgb(74, 97, 202);
 }
-.skill.container h2{
-    padding: 15px 0px;
-    text-align: center;
-}
+
 /* whati do */
 .whatidotitle{
     color: white;
