@@ -8,7 +8,7 @@
   
   ###  Tədris müddətində gördüyüm işlər
 - Portfolio layihəsi
-    - [Kodlar]()
+    - [Kodlar](https://github.com/Rovshen98/PragmatechFoundationProject/tree/main/ProjectFrontEnd/portfolio)
     - html5,css3
     - 8 saat
 - İş adı 02
