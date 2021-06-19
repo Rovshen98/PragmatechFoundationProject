@@ -31,7 +31,7 @@ header{
 
 }
 .menu ul li{
-    padding: 0px 20px;
+    padding: 0px 15px;
 }
 .menu ul li a{
     text-decoration: none;
@@ -39,12 +39,9 @@ header{
     }
 .menu ul li a:hover{
    
-    transition: 700ms;
-    color:white;
-    text-shadow: 0 0 4px,
-                 0 0 8px,
-                 0 0 10px;
-
+    transition: 1s;
+    color:rgba(218, 214, 231, 0.507);
+    
 } 
 .menu ul li a:visited{
     color:rgba(218, 214, 231, 0.808) ;
@@ -69,7 +66,7 @@ header{
 .contact-content{
     width: 100%;
     height: 300px;
-    padding-top: 65px;
+    padding-top: 20px;
     
 }
 .contact-content iframe{
@@ -104,14 +101,17 @@ header{
 .icon-phone img{
     width: 33px;
     height: 45px;
+    cursor: pointer;
 }
 .icon-location img{
     width:33px;
     height:45px;
+    cursor: pointer;
 }
 .icon-mail img{
     width: 33px;
-    height:33px;
+    height:36px;
+    cursor: pointer;
 }
 
 .data{
@@ -122,8 +122,9 @@ header{
     
 }
 .data p{
-    font-size:14px;
-    color:rgba(218, 214, 231, 0.808)
+    font-size:13px;
+    color:rgba(218, 214, 231, 0.808);
+    font-weight: normal;
 }
 /* data customer------- */
 form{
@@ -188,5 +189,32 @@ form{
     border-radius: 30px;
     color: white;
 }
+/* footer */
+.footer{
+    margin: 60px -70px -60px;
+ }
+ .footer ul{
+     display:flex;
+     list-style: none;
+     font-size: 15px;
+     padding-left: 20px;
+ }
+ .footer ul li{
+     padding:15px 20px
+ }
+ .footer ul li a{
+     text-decoration:none;
+      color: rgba(218, 214, 231, 0.808);
+     
+ }
+ .footer ul li a:visited{
+     color: rgba(218, 214, 231, 0.808);
+ }
+ .footer ul li a:hover{
+     cursor:pointer;
+     transition-duration: 1s;
+     color:rgba(218, 214, 231, 0.507);
+ }
+ 
 
 
