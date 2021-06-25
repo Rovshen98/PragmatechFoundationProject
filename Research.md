@@ -1,4 +1,4 @@
-## 22.06.2021
+# 22.06.2021
 #### Tranzistor nədir?
 Dünya yarandığı gündən  etibarən indiyə qədər ən böyük kəşfin nə olduğunu soruşsalar yəqinki bir çoxumuzun ağlına daş dövründə kəşf edilmiş od, xəritələrin yaranmasına kömək olan kompas və ya bu kimi kəşflər gələcək. Amma dünyanı dəyişdirən ən böyük kəşflərdən biri Tranzistordur. Hal-hazırda dünya əhalisinin 56%-i internetdən stifadə edir. yaponiyada yaşayan bir şəxs Afrikada yaşayan bir şəxslə asanlıqla ünsiyyət qura bilir.<br>
  1946-cı ildə icad edilən kompyuter 150 kv gücündə və 50 ton ağırlığında idi. Və saniyədə 100.000 əməliyyat icra edirdi. Günümüzdə isə hamımızın istifadə etdiyi telefonlar saniyədə 3.2 milyard əməliyyat icra edir. Bu qədər qısa zaman içərisində. 50 tonluq cihazdan 150 qramlıq cihaza keçməyimizi təmin edən qurğu tranzistordur. ilk dəfə radio üzərində yoxlanılıb və səs gücünün artdığı müşahidə edilib. Sonra isə zamanla telefonlarda kompyuterlərdə, roketlərdə vs.- də istifadə olunub.Tranzistor silisium maddəsindən hazırlanır və elektrik siqnallarının gücləndirilməsi, yığılması və dəyişilməsi üçün istifadə edilir.
@@ -28,6 +28,36 @@ Sonra isə rəqəmləri 2-nin uyğun qüvvətinə vurub toplayırıq.
  - youtube
  - vikipediya
  - yusif.az
+ 
+ # 22.06.2021
+ ### Var, Let və Const arasındakı fərqlər:<br>
+ - <b>Var</b>- 'variables' sözündən gələn var dataları barındırmaq üçün istifadə olunan konteynerdir. Məsələn:<br>
+ var x = 5;
+ var y = 6;
+ var z = x + y; <br>
+ x,y,z burda 'variables'-dir.<Br>
+ 'Variable'-yə dəyər təyin etmək üçün "=" işarəsindən istifadə olunur:<Br>
+  carName = "Volvo";<Br>
+ - <b>Let</b>- istifadəsində iki dəfə təyin oluna bilməz.<Br>
+ - - Məsələn let istifadəsində siz bunu edə bilməzsiniz:<Br>
+      let x = "John Doe";<Br>
+       let x = 0;<br>
+
+// SyntaxError: 'x' has already been declared <br>
+ (bunu var-da etmək mümkündür)<br>
+ - - Blok transkripsiya- let və const blok transkripsiya içərisində yazıla bilir. Let blok transkripsiyadan kənarda dəyər qəbul etmir:<br>
+ {<Br>
+  let x = 2;<br>
+}<br>
+// x can NOT be used here<br>
+ - <b>Const</b>- elan edildiyi vaxt dəyər təyin olunmalıdır: məs<Br>
+    const PI = 3.14159265359;<br>
+ ### Console in Javasript<br>
+ - console.clear(); - console hissəsini təmizləmək üçündür.<br>
+ - console.count(); - əməliyyatı saydırmaq üçün istifadə olunur.<br>
+ - console.error(); - 
+ 
+ 
  
   
  
