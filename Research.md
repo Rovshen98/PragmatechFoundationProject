@@ -55,7 +55,30 @@ Sonra isə rəqəmləri 2-nin uyğun qüvvətinə vurub toplayırıq.
  ### Console in Javasript<br>
  - console.clear(); - console hissəsini təmizləmək üçündür.<br>
  - console.count(); - əməliyyatı saydırmaq üçün istifadə olunur.<br>
- - console.error(); - 
+ - console.error(); - error mesajı yazmaq üçün istifadə olunur. <Br>
+ - console.warn(); - bu bir xəbərdarlıqdır yazmaq üçün istifadə olunur.<Br>
+ - console.log(); - konsola mesaj yazmaq üçün istifadə olunur.<Br>
+ - console.table(); - konsola cədvəl yazmaq üçün istifadə olunur.<br>
+ ### Data types<br>
+ - <b>string</b>- dırnaq işarəsində yazılır. let x = "Volvo";<br>
+ - <b>number</b>- rəqəmləri ifadə etmək üçün istifadə olunur.<Br>
+ ### Logical Operators<br>
+ - &&- və anlamına gəlir<br>
+ - ||- və yaxud anlamına gəlir<br>
+ - ! - uyğun olmayan anlamına gəlir<br>
+ ### JavaScript Arithmetic Operator(Modulus,increment,decrement)<Br>
+ - + toplama əməliyyatı üçün istifadə olunur. let x = 100 + 50;<br>
+ - - çıxma əməliyyatı üçün istifadə olunur <br>
+ - % let x = 5;<br>
+     let y = 2;<br>
+     let z = x % y;<Br>burda qalıq 1-dir<br>
+ - ++ let x = 5;
+      x++;
+      let z = x; burda x 1 vahid artır və cavab 6-dır. <Br>
+ - -- let x = 5;
+      x--;
+      let z = x; burda x 1 vahid azalır və cavab 4-dür.
+ 
  
  
  
