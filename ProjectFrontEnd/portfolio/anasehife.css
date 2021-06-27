@@ -52,8 +52,8 @@ header{
 .menu ul li a:visited{
     color:rgba(218, 214, 231, 0.808) ;
 }
-.burger{
-    display: none;
+.fas.fa-bars{
+    display:none;
 }
 
 .logo img{
@@ -325,7 +325,7 @@ p{
 
     }
    
-/* .logo:hover .menu ul{
+.logo:hover .menu ul{
     width: 300px;
     height: 400px;
         display: flex;
@@ -335,7 +335,7 @@ p{
         right:0px;
         transform: translateX(0%);
 }
-     */
+    
 .menu{
     display: none;
         
@@ -403,6 +403,28 @@ p{
         margin:0px;
         padding:15px;
 
+    }
+    .fas.fa-bars{
+        display:block;
+        color: white;
+    }
+    .fas.fa-bars:hover .menu {
+         transform:translateX(0%);
+    }
+    .menu{
+        
+        align-content:center;
+        width: 40%;
+        height: 80vh;
+        top: 70px;
+        right: 0px;
+        background-color: black;
+         position:absolute;
+         transform: translateX(100%);
+    }
+    .menu ul{
+        display: flex;
+        flex-direction:column
     }
    
     .picture{
