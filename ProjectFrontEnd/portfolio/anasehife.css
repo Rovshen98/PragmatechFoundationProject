@@ -261,12 +261,61 @@ p{
     transition-duration: 1s;
     color:rgba(218, 214, 231, 0.507);
 }
+/* x small devices */
+@media only screen and (min-width:600px) and (max-width:650px){
+.main{
+    width:100%;
+    border-radius:0px;
+    margin:0px;
+    padding:15px;
+    overflow-x: hidden;
 
+}
+.menu{
+    display: none;
+        
+    }
+.content{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 600px;
+    }
+    .text{
+        padding-top: 18px;
+        text-align: center;
+        width: 350px;
+    }
+    .picture{
+        display: flex;
+        justify-content: center;
+        width:85%;
+        height:70vh;
+        padding: 0px;
+    }
+    .picture img{
+        
+        width: 87%;
+        height:70vh;
+    }
+    .whatido{
+        margin-bottom: 20px;
+    }
+    .fas.fa-bars{
+        color: white;
+    }
+    .footer{
+        width: calc(100% + 30px);
+        margin:0px 0px 0px -15px;   
+    }
+
+}
 /* small devices */
 @media only screen and (min-width:650px) and (max-width:800px){
-.body{
+/* .body{
     overflow-x: hidden;
-}
+} */
     .main{
         width:100%;
         border-radius:0px;
@@ -287,11 +336,10 @@ p{
         transform: translateX(0%);
 }
      */
-/* .menu{
-        position: relative;
-        transition: 1s;
+.menu{
+    display: none;
         
-    } */
+    }
 .menu ul{
     width: 300px;
     height: 400px;
@@ -319,23 +367,28 @@ p{
     height: 600px;
 }
 .text{
-    padding-top: 10px;
+    padding-top: 18px;
     text-align: center;
     width: 350px;
 }
 .picture{
-    width:auto;
-    height: auto;
+    display: flex;
+    justify-content: center;
+    width:70%;
+    height:70vh;
+    padding: 0px;
 }
 .picture img{
-    width: 90%;
+    
+    width: 92%;
     height:70vh;
 }
 .fas.fa-bars{
     color: white;
 }
 .footer{
-  margin: 0px;    
+    width: calc(100% + 30px);
+    margin:0px 0px 0px -15px;   
 }
     
 }
@@ -359,14 +412,15 @@ p{
     
     .picture img{
         border-radius:50%;
-        width:95%;
-        height:75vh;
+        width:97%;
+        height:63vh;
         border: 18px solid #444444c4;}
     .text{
         width: 50%;
     }
     .footer{
-        margin:0;
+        width: calc(100% + 30px);
+        margin:0px 0px 0px -15px;
     }
     
 }

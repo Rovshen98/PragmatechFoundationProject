@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <Script>
+   let array = [1,5,9,'New York', true, 'javascript',7, ['false','exit']];
+//    new york
+   console.log(array[3]);
+
+//   last element
+   console.log(array[array.length-1]);
+
+//    length array
+   console.log(array[7][0]);
+
+// Add new element 'London' to the end of array
+
+    array.push("London");
+    console.log(array);
+
+// Remove last element from array
+   array.pop();
+   console.log(array);
+
+// Add after second element 'Moscow','Ankara' using method 'splice'
+    array.splice(2,0,"Moscow", "Ankara");
+    console.log(array);
+
+// Add after second element 'Audi','BMW' and remove next element using method 'splice'
+    array.splice(2,3,"Audi", "BMW");
+    console.log(array);
+
+// let array = [36,5,89,7,2,1]
+let arr =[36,5,89,7,2,1];
+arr.sort((x,y) =>x-y);
+console.log(arr);
+
+// let str = "Alma, Armud, Heyva, Nar, Mandarin";
+let str = "Alma, Armud, Heyva, Nar, Mandarin";
+console.log(str.slice(13,18));
+
+// Show in console last two elements of array using method slice
+console.log(str.slice(-13));
+
+// Function must return a random number greater 'x' and less than 'y'
+function mine(x,y) {
+  return Math.floor(Math.random() * (y - x))+x;}
+  console.log(mine(5,11));
+
+    </Script>
+</body>
+</html>
