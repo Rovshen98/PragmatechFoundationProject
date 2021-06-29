@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Sort elements of an array from larger to smaller
+        let arr = [2,6,32,95,44,62,94];
+        arr.sort((x,y) =>y-x);
+        console.log(arr);
+        // Show in console all elements which are divided into 3 without remainder
+        for( let i=0;i<arr.length;i++){
+              if(arr[i]%3==0){
+                  console.log(arr[i]);
+              }
+        }
+        // Show in console all element which are less than 50
+         let ar=[];
+        for( let i=0;i<arr.length;i++){
+        if(arr[i]<=50){
+            ar.push(arr[i]);
+        }
+    }
+    console.log(ar);
+    // Show in console all elements which are greater than 35 and less than 70
+    
+// let arr = ["I", "learn", "JavaScript"];
+// Remove first element of an array (splice)
+let array = ["I", "learn", "JavaScript"];
+array.splice(0,1);
+console.log(array);
+// Remove first element and add two other ('PHP','Python') (splice)
+let arko = ["I", "learn", "JavaScript"];
+arko.splice(0,1,"PHP","Python");
+console.log(arko);
+// Function returns only that elements which types are equal to a function parameter
+let arra = [25, 95, 'test', 'php', true, {}, 129, 'javascript'];
+function type(arr, a) {
+    let arrayNew = [];
+    for (i = 0; i < arr.length; i++) {
+        if (a == typeof arr[i]) {
+            arrayNew.push(arr[i])
+        }
+    }
+    return arrayNew;
+};
+
+
+
+let number = type(arra, "number");
+console.log(number);
+let string = type(arra, "string");
+console.log(string);
+let object = type(arra, "object");
+console.log(object);
+let boolean = type(arra, "boolean");
+console.log(boolean);
+
+    </script>
+</body>
+</html>

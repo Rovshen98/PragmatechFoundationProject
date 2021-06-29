@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // for loop-------------
+        for(var i=0;i<10;i++){
+            console.log(i + 1 )
+        }
+    // for in------------------
+    const mobile = {model:"galaxyA5", storage:"16gb", RAM:"4"}; 
+
+    let txt = "";
+    for (let x in mobile) {
+    txt += mobile[x] + " ";
+    }
+    console.log (txt+ "bura eladir ");
+
+    // for each-------------
+    let tug = "";
+     mobile.forEach(myFunction);
+     
+
+     function myFunction(item,index) {
+   console.log(item) ;
+}
+
+    // for  of-------------
+    const phones = ["galaxy ", "iphone ", "nokia "];
+     let text = "";
+     for (let x of phones) {
+     text += phones[x] 
+    
+}
+console.log(text);
+
+// while------------
+
+let ip="";
+let x = 0;
+while (x<10){
+    ip += x;
+    x++;
+}
+console.log(ip);
+
+
+    </script>
+</body>
+</html>
