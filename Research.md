@@ -81,7 +81,9 @@ Sonra isə rəqəmləri 2-nin uyğun qüvvətinə vurub toplayırıq.
  # 27.06.2021<br>
  - <b>[javascript tasks 2](https://github.com/Rovshen98/PragmatechFoundationProject/blob/main/Works/javascript/index.html);</b><br>
  # 29.06.2021<br>
- - <b>[javascript tasks 3](https://github.com/Rovshen98/PragmatechFoundationProject/tree/main/Works/javascript)</b>
+ - <b>[javascript tasks 3](https://github.com/Rovshen98/PragmatechFoundationProject/tree/main/Works/javascript)</b> <br>
+ # 04.07.2021<br>
+ - <b>[javascript task DOM](https://github.com/Rovshen98/PragmatechFoundationProject/tree/main/Works/javascript)</b>
  
  
  
