@@ -67,22 +67,22 @@ header{
      display: flex;
      width: 100%;
      height: 360px;
-     justify-content: center;
+     justify-content:center;
      align-items: center;
 }
 .picture{
     width: 38%;
     padding-right: 15px;
     transition:  2s linear;
-    
+    height: 340px;
  }
  .picture img{
      border-radius:50%;
-     height: 320px;
-     width:320px;
+     height: 300px;
+     width:300px;
      border: 18px solid #444444c4;
-     
      object-fit: cover;
+     
 
  }
  .picture:hover{
@@ -261,211 +261,3 @@ p{
     transition-duration: 1s;
     color:rgba(218, 214, 231, 0.507);
 }
-/* x small devices */
-@media only screen and (min-width:600px) and (max-width:650px){
-.main{
-    width:100%;
-    border-radius:0px;
-    margin:0px;
-    padding:15px;
-    overflow-x: hidden;
-
-}
-.menu{
-    display: none;
-        
-    }
-.content{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: 600px;
-    }
-    .text{
-        padding-top: 18px;
-        text-align: center;
-        width: 350px;
-    }
-    .picture{
-        display: flex;
-        justify-content: center;
-        width:85%;
-        height:70vh;
-        padding: 0px;
-    }
-    .picture img{
-        
-        width: 87%;
-        height:70vh;
-    }
-    .whatido{
-        margin-bottom: 20px;
-    }
-    .fas.fa-bars{
-        color: white;
-    }
-    .footer{
-        width: calc(100% + 30px);
-        margin:0px 0px 0px -15px;   
-    }
-
-}
-/* small devices */
-@media only screen and (min-width:650px) and (max-width:800px){
-/* .body{
-    overflow-x: hidden;
-} */
-    .main{
-        width:100%;
-        border-radius:0px;
-        margin:0px;
-        padding:15px;
-        overflow-x: hidden;
-
-    }
-   
-.logo:hover .menu ul{
-    width: 300px;
-    height: 400px;
-        display: flex;
-        flex-direction: column;
-        position:absolute;
-        top: 20vh;
-        right:0px;
-        transform: translateX(0%);
-}
-    
-.menu{
-    display: none;
-        
-    }
-.menu ul{
-    width: 300px;
-    height: 400px;
-        display: flex;
-        flex-direction: column;
-        position:absolute;
-        top: 20vh;
-        right:0px;
-        background-color: black;
-       z-index: 90;
-       transform: translateX(100%);
-    }
-    .fas.fa-bars:hover .menu ul{
-        transform: translateX(0%);
-
-    }
-    
-
-
-.content{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 600px;
-}
-.text{
-    padding-top: 18px;
-    text-align: center;
-    width: 350px;
-}
-.picture{
-    display: flex;
-    justify-content: center;
-    width:70%;
-    height:70vh;
-    padding: 0px;
-}
-.picture img{
-    
-    width: 92%;
-    height:70vh;
-}
-.fas.fa-bars{
-    color: white;
-}
-.footer{
-    width: calc(100% + 30px);
-    margin:0px 0px 0px -15px;   
-}
-    
-}
-
-/* medium devices */
-@media only screen and (min-width:800px) and (max-width:992px){
-   
-    
-    .main{
-        width: 100%;
-        border-radius:0px;
-        margin:0px;
-        padding:15px;
-
-    }
-    .fas.fa-bars{
-        display:block;
-        color: white;
-    }
-    .fas.fa-bars:hover .menu {
-         transform:translateX(0%);
-    }
-    .menu{
-        
-        align-content:center;
-        width: 40%;
-        height: 80vh;
-        top: 70px;
-        right: 0px;
-        background-color: black;
-         position:absolute;
-         transform: translateX(100%);
-    }
-    .menu ul{
-        display: flex;
-        flex-direction:column
-    }
-   
-    .picture{
-        width:48%;
-       height:350px
-    }
-    
-    .picture img{
-        border-radius:50%;
-        width:97%;
-        height:63vh;
-        border: 18px solid #444444c4;}
-    .text{
-        width: 50%;
-    }
-    .footer{
-        width: calc(100% + 30px);
-        margin:0px 0px 0px -15px;
-    }
-    
-}
-/* medium devices */
-/* large devices */
-@media only screen and (min-width:993px) and (max-width: 1102px) {
-    .main{
-        width: 94%;
-        margin: 3% auto;
-    }
-
-    .picture{
-    width:50%;
-    padding-left:40px
-    }
-    .picture img{
-        border-radius:50%;
-        width: 340px;
-        height: 340px;
-        border: 18px solid #444444c4;}
-    .text{
-        width: 50%;
-    }
-
-}
-/* large devices */

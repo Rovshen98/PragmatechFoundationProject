@@ -1,0 +1,9 @@
+div{
+    width: 400px;
+    height: 400px;
+}
+.miniBlock{
+    width: 38px;
+    height: 38px;
+    border:1px solid black;
+}

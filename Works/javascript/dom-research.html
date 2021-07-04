@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="do" onclick="myfunction()">Azərbaycanın paytaxtı Bakıdır</p>
+    <p id="re">O içəridən gələn   <span>səsləri</span> eşidirdi</p>
+    <button onclick="demo()">tikla</button>
+    <script>
+        function myfunction(){
+            document.getElementById("do").innerHTML="Türkiyənin paytaxtı Ankaradır";
+        }
+        function demo(){
+            alert(document.getElementById("re").textContent);
+        }
+        
+
+    </script>
+</body>
+</html>

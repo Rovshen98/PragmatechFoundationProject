@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let div = document.createElement('div');
+        div.className='block';
+        document.body.appendChild(div);
+        
+        for( let i=0;i<10;i++){
+            let newdiv= document.createElement('div');
+            newdiv.classList.add('miniBlock');
+            document.querySelector('.block').appendChild(newdiv);
+            newdiv.innerText=i+1;
+           
+        }
+        
+        
+    </script>
+</body>
+</html>

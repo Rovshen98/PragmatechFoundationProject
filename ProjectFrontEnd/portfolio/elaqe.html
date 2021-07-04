@@ -8,6 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="elaqe.css">
+<script src="https://www.google.com/recaptcha/api.js"></script>
 <title>Document</title>
    
     
@@ -89,9 +90,10 @@
                   </div>
                 </div>
             <!-- input--------------------- -->   
-                <div class="contact-robot">
-                    <iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI&amp;co=aHR0cHM6Ly9sbXBpeGVscy5jb206NDQz&amp;hl=en&amp;v=6OAif-f8nYV0qSFmq-D6Qssr&amp;theme=dark&amp;size=normal&amp;cb=5upvrki9xc7x" width="285" height="78" role="presentation" name="a-dph13maieo5c" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>              
-                </div>
+            <button class="g-recaptcha" 
+            data-sitekey="reCAPTCHA_site_key" 
+            data-callback='onSubmit' 
+            data-action='submit'>Submit</button>
                <input type="submit" value="Mesaj Göndər" placeholder="Mesaj Göndər" class="contact-button">
             </form>
             <!-- data about customer -->
@@ -105,5 +107,12 @@
             </div>
         </footer> 
 </div>
+
+    <script>
+   function onSubmit(token) {
+     document.getElementById("demo-form").submit();
+   }
+
+</script>
 </body>
 </html>
