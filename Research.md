@@ -79,7 +79,9 @@ Sonra isə rəqəmləri 2-nin uyğun qüvvətinə vurub toplayırıq.
       x--;
       let z = x; burda x 1 vahid azalır və cavab 4-dür.<br>
  # 27.06.2021<br>
- - <b>[javascript tasks 2](https://github.com/Rovshen98/PragmatechFoundationProject/blob/main/Works/javascript/index.html);</b>
+ - <b>[javascript tasks 2](https://github.com/Rovshen98/PragmatechFoundationProject/blob/main/Works/javascript/index.html);</b><br>
+ # 29.06.2021<br>
+ - <b>[javascript tasks 3](https://github.com/Rovshen98/PragmatechFoundationProject/tree/main/Works/javascript)</b>
  
  
  
