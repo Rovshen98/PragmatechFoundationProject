@@ -5,7 +5,8 @@
         border-radius:0px;
         margin:0px;
         padding:15px;
-        overflow-x: hidden;
+      
+
     
     }
     .menu{
@@ -139,15 +140,13 @@
             border-radius:0px;
             margin:0px;
             padding:15px;
-    
+            position: relative;
+            overflow-x: hidden;
         }
-        .fas.fa-bars{
-            display:block;
-            color: white;
-        }
-        .fas.fa-bars:hover .menu {
-             transform:translateX(0%);
-        }
+       .burger{
+           display: block;
+       }
+        
         .menu{
             
             align-content:center;
@@ -156,8 +155,21 @@
             top: 70px;
             right: 0px;
             background-color: black;
-             position:absolute;
-             transform: translateX(100%);
+            position:absolute;
+            transform: translateX(100%);
+            
+            transition: 0.5s ease-in;
+        }
+        .active{
+            align-content:center;
+            width: 40%;
+            height: 80vh;
+            top: 70px;
+            right: 0px;
+            background-color: black;
+            position:absolute;
+            transform: translateX(0%);
+            display: block;
         }
         .menu ul{
             display: flex;
@@ -165,17 +177,20 @@
         }
        
         .picture{
-            width:48%;
-           height:350px
+            width:310px;
+           height:310px;
         }
         
         .picture img{
             border-radius:50%;
-            width:97%;
-            height:250px;
+            width:inherit;
+            height:inherit;
             border: 18px solid #444444c4;}
         .text{
             width: 50%;
+        }
+        .text h1{
+            font-size: 40px;
         }
         .footer{
             width: calc(100% + 30px);
@@ -196,17 +211,20 @@
         }
     
         .picture{
-        width:50%;
-        padding-left:40px;
+        width:350px;
+        
         
         }
         .picture img{
             border-radius:50%;
-            width: 340px;
-            height: 340px;
-            border: 18px solid #444444c4;}
+            width:inherit ;
+            height:inherit ;
+            border: 18px solid #444444c4;
+            
+        }
+            
         .text{
-            width: 50%;
+            width: 52%;
         }
     
     }
