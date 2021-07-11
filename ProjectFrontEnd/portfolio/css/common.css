@@ -1,9 +1,12 @@
+html{
+    scroll-behavior: smooth;
+}
 ::-webkit-scrollbar{
     width: 7px;
 }
 ::-webkit-scrollbar-track{
-    border: 1px solid grey;
-    background-color: white;
+    
+    background-color:#2222229c;
 }
 ::-webkit-scrollbar-thumb{
    border-radius: 5px;
@@ -47,13 +50,19 @@ z-index: 999999;
         opacity: 0;
     }
 }
+
+
+
+
+
 /* scroll */
 .top-to{
+    display: none;
     position: fixed;
     bottom: 10px;
     right: 15px;
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     background-color: #333;
     outline: none;
     border: none;
@@ -66,13 +75,23 @@ z-index: 999999;
 .top-to:hover{
     color:rgb(74, 97, 202);
 }
-.top-to.active
 
+/* flip-page */
+.main{
+    animation: hammer 0.5s linear ;
+   
+}
+@keyframes hammer{
+    from{transform:rotateY(90deg) translateX(60%)}
+    to{transform: rotate(0deg) translateX(0%)}
+    
+}
 
 /* header */
 header{
     
     display:flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     
@@ -115,7 +134,7 @@ header{
         height: 3px;
         margin: 5px;
         background-color:rgba(218, 214, 231, 0.808) ;
-        
+        border-radius: 5px;
     }
 
 .logo img{
