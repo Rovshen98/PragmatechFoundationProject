@@ -99,10 +99,15 @@ form{
     width: 100%;
     height: 62px;
 }
+
+.contact-customer-input{
+    display: flex;
+}
+
 .column-left{
     margin-right: 15px;
 }
-.column-left div{
+/* .column-left div{
     
     margin-bottom: 21.5px;
     width:100%;
@@ -110,18 +115,27 @@ form{
     
 
    
-}
-.column-left div input{
-    width:286px;
+} */
+.column-left  input{
+    width:100%;
+    height: 42px;
     background-color:#222222;
     padding:10px 25px 10px 12px;
     border: 2px solid rgb(109, 107, 107);
     border-radius:5px;
     color:white;
+    outline: none;
+    margin-bottom: 21px;
 }
-.contact-customer-input{
-    display: flex;
-}
+
+ .fullname.success{
+     border: 2px solid rgb(15, 180, 15);
+ }
+.fullname.fail{
+     border: 2px solid rgb(184, 26, 26);
+     
+ }
+ 
 .column-right{
     width: 100%;
     height: auto;
@@ -149,10 +163,14 @@ form{
     height: 39px;
     padding:11.2px 29.4px 11.2px 29.4px;
     background-color: #222222;
-    border: 2px solid #007ced;
+    border: 2px solid rgb(74, 97, 202);
     border-radius: 30px;
     color: white;
 }
+.contact-button:focus{
+    background-color: rgb(41, 74, 223);
+}
+
 
  
 

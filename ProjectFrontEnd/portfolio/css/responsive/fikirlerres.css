@@ -1,5 +1,9 @@
 /* small devices */
 @media only screen and (min-width:0px) and (max-width:450px){
+    .loader{
+        width: 80px;
+        height: 80px;
+    }
 ::-webkit-scrollbar{
     display: none;
 }
@@ -191,6 +195,10 @@ button.top-to{
 
 /* medium devices */
 @media only screen and (min-width:451px) and (max-width:802px){
+    .loader{
+        width: 80px;
+        height: 80px;
+    }
     ::-webkit-scrollbar{
         display: none;
     }
@@ -353,6 +361,10 @@ button.top-to{
     }
 }
 @media only screen and (min-width:803px) and (max-width:992px){
+    .loader{
+        width: 80px;
+        height: 80px;
+    }
     ::-webkit-scrollbar{
         display: none;
     }
