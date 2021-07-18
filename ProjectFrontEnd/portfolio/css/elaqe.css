@@ -7,6 +7,7 @@
 body{
     background-color: rgb(74, 97, 202);
     font-family: 'Hammersmith One', sans-serif;
+    letter-spacing: 1px;
 }
 .main{
     width: 94%;
@@ -128,13 +129,7 @@ form{
     margin-bottom: 21px;
 }
 
- .fullname.success{
-     border: 2px solid rgb(15, 180, 15);
- }
-.fullname.fail{
-     border: 2px solid rgb(184, 26, 26);
-     
- }
+ 
  
 .column-right{
     width: 100%;
@@ -153,11 +148,7 @@ form{
      font-size: 12px;
      height: 167px;
 }
-.g-recaptcha{
-    width: 304px;
-    height:78px;
-    margin-bottom: 20px;
-}
+
 .contact-button{
     width: 163.1px;
     height: 39px;

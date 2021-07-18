@@ -6,12 +6,10 @@ let textarea = document.querySelector("input.tarea");
 
 
 
-myform.addEventListener("submit", (e)=> {
-     e.preventDefault();
-     
-    fullname.classList.add("fail");
-     
-});
+document.querySelector("form").addEventListener("submit", (e)=>{
+    e.preventDefault();
+    console.log("koko")
+})
     
 
     
