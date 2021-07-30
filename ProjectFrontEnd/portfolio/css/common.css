@@ -26,8 +26,7 @@ align-items: center;
 text-align: center;
 }
 .wrapper-finish{
-    opacity: 0;
-    pointer-events: none;
+   display: none;
 }
 .loader{
 border-radius: 50%;
