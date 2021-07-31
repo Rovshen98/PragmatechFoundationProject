@@ -40,12 +40,15 @@ def system():
         if user==istifadeci.username and passw==istifadeci.password:
             print(istifadeci.melumatigoster())
             break
-        else:
+        else :
             print("Daxil etdiyiniz məlumatları yoxlayın ya da qeydiyyatdan keçmək üçün Q hərfinə basın")
-            q=input() 
-            if q=="q" or q=="Q":
+            q=input()
+            if q=="Q" and q=="q":
+                qeydiyyat()
+            elif q==2:
                 system()
-                  
+            else:
+                print("yanlis emeliyyat")     
 
 
 while True:
