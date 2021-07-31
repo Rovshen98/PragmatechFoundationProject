@@ -17,8 +17,9 @@ class istifadeci:
         
     
     def melumatigoster(self):
-        return(f"Ad:{self.ad}\nSoyad:{self.soyad}\nEmail:{self.email}\nUsername:{self.username}\nPassword:{self.password}")   
-    
+        print("----------------------------------")
+        print(f"Ad:{self.ad}\nSoyad:{self.soyad}\nEmail:{self.email}\nUsername:{self.username}\nPassword:{self.password}")   
+        return("----------------------------------")
         
 def qeydiyyat():
      print('Qeydiyyatdan Keçin (Tələb olunan məlumatlar):')
@@ -31,20 +32,29 @@ def qeydiyyat():
      istifadeciler.append(istifadechi)
 
 
+    
+def system():
+    user=input("Username:")
+    passw=input("Password:")
+    for istifadeci in istifadeciler:
+        if user==istifadeci.username and passw==istifadeci.password:
+            print(istifadeci.melumatigoster())
+            break
+        else:
+            print("Daxil etdiyiniz məlumatları yoxlayın ya da qeydiyyatdan keçmək üçün Q hərfinə basın")
+            q=input() 
+            if q=="q" or q=="Q":
+                system()
+                  
+
 
 while True:
     x=int(input("Daxil etmək istədiyiniz nömrə:"))
     if (x==1):
        qeydiyyat()
     elif (x==2):
-        user=input("Username:")
-        passw=input("Password:")
-        for i in istifadeciler:
-            if(user==istifadeci.self.username):
-                print(i)
-                
-            
-        
+        system()
+                    
     else:
         break
 
