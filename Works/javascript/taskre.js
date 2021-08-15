@@ -26,13 +26,8 @@ document.querySelector('.btn').addEventListener('click', (event) => {
     }
     document.querySelector(".input").appendChild(result);
    
-    input.addEventListener("click", (e)=>{
-        let klas =e.target.getAttribute("class");
-        if(klas =="buton"){
-            let parent=e.target.querySelector(".buton").parentElement;
-            input.removeChild(parent);
-        }
-    })
+
+    
     
 
    
