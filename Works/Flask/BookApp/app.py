@@ -59,12 +59,29 @@ def delete(id):
             data.remove(book)
     return redirect("/admin/books")
     
-@app.route("/admin/update/<int:id>") 
+@app.route("/admin/update/<int:id>",methods=["GET","POST"]) 
 def update(id):
-    book=data 
-    for book in data:
-        if id==book["id"]:
-            return render_template ("update.html",book=book)
+    for x in data:
+        if id==x["id"]:
+            book = x
+            if request.method=="POST":               
+                ad=request.form["ad"]
+                yazici=request.form["yazici"]
+                il=request.form["il"]
+                say=request.form["say"]
+                text=request.form["text"]
+                book2={
+                "id":x["id"],
+                "ad":ad,
+                "yazici":yazici,
+                "il":il,
+                "say":say,
+                "text":text
+                }
+                data.remove(x)
+                data.append(book2)
+                return redirect("/admin")
+    return render_template ("update.html",book=book)
 
 if __name__=="__main__":
     app.run(debug=True)

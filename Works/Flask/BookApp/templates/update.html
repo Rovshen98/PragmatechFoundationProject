@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/update.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='update.css') }}">
     <title>Document</title>
 </head>
 <body>
     <h1>Update et</h1><br>
     <!--  Kitab adı - Kitabın yazarı - Kitabın çap ili - Kitabın səhifə sayı - Kitabın xülasəsi -->
-    <form action="/create_book" method="POST">
+    <form action="/admin/update/{{book.id}}" method="POST">
         <p>kitabın adı:  <input type="text" name="ad" value="{{book.ad}}"></p>
         <p>kitabın yazarı:  <input type="text" name="yazici" value="{{book.yazici}}"></p>
         <p>kitabın çap ili:  <input type="text" name="il" value="{{book.il}}"></p>
