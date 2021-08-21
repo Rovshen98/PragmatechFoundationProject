@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/addbook.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Kitab əlavə et</h1><br>
+    <!--  Kitab adı - Kitabın yazarı - Kitabın çap ili - Kitabın səhifə sayı - Kitabın xülasəsi -->
+    <form action="/create_book" method="POST">
+        <p>kitabın adı:  <input type="text" name="ad"></p>
+        <p>kitabın yazarı:  <input type="text" name="yazici"></p>
+        <p>kitabın çap ili:  <input type="text" name="il"></p>
+        <p>kitabın səhifə sayı:  <input type="text" name="say"></p>
+        <p> Kitabın xülasəsi:</p> <textarea style="width:200px; height:200px" name="text"></textarea><Br>
+        <input class="btn" type="submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/update.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Update et</h1><br>
+    <!--  Kitab adı - Kitabın yazarı - Kitabın çap ili - Kitabın səhifə sayı - Kitabın xülasəsi -->
+    <form action="/create_book" method="POST">
+        <p>kitabın adı:  <input type="text" name="ad" value="{{book.ad}}"></p>
+        <p>kitabın yazarı:  <input type="text" name="yazici" value="{{book.yazici}}"></p>
+        <p>kitabın çap ili:  <input type="text" name="il" value="{{book.il}}"></p>
+        <p>kitabın səhifə sayı:  <input type="text" name="say" value="{{book.say}}"></p>
+        <p> Kitabın xülasəsi:</p> <textarea style="width:200px; height:200px" name="text">{{book.text}}</textarea><Br>
+        <input class="btn" type="submit">
+</form>
+</body>
+</html>
