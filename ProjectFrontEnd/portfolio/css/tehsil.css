@@ -69,6 +69,7 @@ h3{
 }
 .star_1 img:hover{
     border: 1px solid white;
+    opacity: 0.7;
 }
 .star_1 h2{
     color:white

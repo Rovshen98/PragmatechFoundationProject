@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+    {% for news in blog %}
+    <a href="read">
+        <div class="news">
+            <img src="../image-Dead-hacker-skeleton-at-the-computer-stocky-ai-24863146.jpg" alt="">
+            <div class="date">
+             <div class="when">
+                <div class="date_day">{{news.newsday}}</div>
+                <div class="month">{{news.newsmonth}}</div>
+             </div>
+                <div class="time">{{news.newstime}}</div>
+            </div>
+            <div class="title">{{news.newstitle}}</div>
+           
+        </div>
+    </a>
+    {% endfor %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.main{
+    max-width: 590px;
+    margin: 2% auto;
+    display: flex;
+    flex-direction:column;
+}
+img{
+  width: 590px;
+  height: 413px;
+  object-fit: cover;
+}
+.title{
+    font-size: 42px;
+    font-weight: bold;
+    padding: 10px;
+    color:  #13317F;
+}
+.content{
+    color: black;
+    font-size: 18px;
+}
