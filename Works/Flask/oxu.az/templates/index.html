@@ -12,15 +12,15 @@
     {% for news in blog %}
     <a href="read">
         <div class="news">
-            <img src="../image-Dead-hacker-skeleton-at-the-computer-stocky-ai-24863146.jpg" alt="">
+            <img src="../static/{{news.file}}" alt="">
             <div class="date">
              <div class="when">
-                <div class="date_day">{{news.newsday}}</div>
-                <div class="month">{{news.newsmonth}}</div>
+                <div class="date_day">{{news.day}}</div>
+                <div class="month">{{news.month}}</div>
              </div>
-                <div class="time">{{news.newstime}}</div>
+                <div class="time">{{news.time}}</div>
             </div>
-            <div class="title">{{news.newstitle}}</div>
+            <div class="title">{{news.title}}</div>
            
         </div>
     </a>
