@@ -2,6 +2,7 @@ from flask import Flask,render_template,request,redirect
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.utils import secure_filename
 from werkzeug.datastructures import  FileStorage
+from os.path import join, dirname, realpath
 
 import os
 
@@ -10,7 +11,8 @@ import os
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///ted.db'
 db = SQLAlchemy(app)
-app.config['UPLOAD_FOLDER']= 'static/uploads'
+app.config['UPLOAD_FOLDER']= 'static/uploads/'
+
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -26,7 +28,8 @@ def createnews():
     
     if request.method=="POST":
         file = request.files['file']
-        filename = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
+        filename=file.filename
+        filename = os.path.join('../static/uploads/', filename)
 
         file.save(filename)
       

@@ -37,11 +37,13 @@ header{
    width: 15px;
    height: 12px;
    margin-right: 3px;
+   margin-bottom:7px;
 }
 .burger div{
     width: 14px;
     height: 2px;
     margin-top: 2px;
+    
 }
 .burger:hover  div{
    background-color: rgba(218, 214, 231, 0.808) ;
@@ -567,4 +569,8 @@ position:fixed;
     }
     /* large devices */
 
-   
+    @media only screen and (min-width:1274px){
+        .main{
+            max-width: 1197px;
+        }
+    }

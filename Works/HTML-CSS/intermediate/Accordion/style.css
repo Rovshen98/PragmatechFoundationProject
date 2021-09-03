@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(235, 241, 241);
+}
+
+.accord{
+    width: 700px;
+    height: 80px;
+    background-color: aqua;
+    border: none;
+    font-size: 25px;
+    display: block;
+
+}
+.accord:hover{
+    background-color: rgb(4, 223, 223);
+    color: white;
+}
+
+.panel{
+    width:700px;
+    height: 150px;
+    transition: 1s linear ease-in;
+    background-color: white;
+    
+}
+.panel p{
+    font-size: 25px;
+}

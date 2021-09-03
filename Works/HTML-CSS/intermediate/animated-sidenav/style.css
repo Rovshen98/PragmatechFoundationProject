@@ -1,0 +1,91 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image:url(../animated-sidenav/img/c0f5b72eaffc8b36eee68285be45ff92.jpg );
+
+}
+
+.opn{
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    opacity: 1;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+}
+.opn div{
+    width: 100%;
+    height:4px;
+    background-color: white;
+    display: block;
+    
+    
+}
+
+.menu{
+    width:0;
+    height: 100vh;
+    background-color: rgb(138, 29, 138);
+    position:relative;
+    top: 0;
+    left: 0;
+    display:flex;
+    justify-content:center;
+    transition: 0.5s;
+    padding-top: 20px;
+    overflow-x: hidden;
+    
+
+}
+.menu ul{
+    width: 150px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    align-items: flex-start;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.menu a:hover{
+    transition: 0.5s;
+    color:rgba(255, 255, 255, 0.589)
+}
+.cls{
+    width: 50px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top:25px;
+    right: 10px;
+    cursor:pointer
+    
+
+}
+.cls div{
+    display:block;
+    width:3px;
+    height:25px;
+    background-color: white;
+    
+}
+.left{
+    transform: rotate(45deg);
+}
+.right{
+    transform: rotate(90deg);
+}

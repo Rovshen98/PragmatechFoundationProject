@@ -37,6 +37,7 @@ header{
    width: 15px;
    height: 12px;
    margin-right: 3px;
+   margin-bottom:7px;
 }
 .burger div{
     width: 14px;
@@ -684,6 +685,13 @@ button.top-to{
         height: 40px;
     }
     
+    
      
     
+}
+
+@media only screen and (min-width:1274px){
+    .main{
+        max-width: 1197px;
+    }
 }
