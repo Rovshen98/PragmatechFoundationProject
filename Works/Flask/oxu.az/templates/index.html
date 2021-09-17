@@ -10,9 +10,9 @@
 <body>
     <div class="main">
     {% for news in blog %}
-    <a href="read">
+    <a href="read/{{news.id}}">
         <div class="news">
-            <img src="static/{{news.file}}" alt="">
+            <img src="{{news.file}}" alt="">
             <div class="date">
              <div class="when">
                 <div class="date_day">{{news.day}}</div>

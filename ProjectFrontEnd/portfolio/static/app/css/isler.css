@@ -1,0 +1,89 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(74, 97, 202) !important;
+    font-family: 'Hammersmith One', sans-serif !important;
+    letter-spacing: 1px;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.main{
+    width: 94%;
+    background-color:#222222;
+    border-radius: 35px;
+    margin:3% auto;
+    padding: 40px 70px 60px 70px;
+      
+    
+}
+
+.project-head{
+    width:calc(100% + 140px);
+    color:white;
+    height:183px;
+    padding: 65px 65px;
+    border-bottom: 1px solid rgba(167, 164, 175, 0.747);
+    border-top:1px solid rgba(167, 164, 175, 0.747);
+    margin-left:-70px
+}
+.projects{
+   width: 100%;
+   height: max-content;
+   display: flex;
+   justify-content:flex-start;
+   margin: 20px 0;
+   flex-wrap: wrap;
+}
+
+.project{
+    width: 45%;
+    height: 30vw;
+    max-height: 400px;
+    margin: 2.5% 2.5%;
+    border-radius: 5px;
+    
+}
+.project a{
+    display:inline-block;
+    
+    outline: none;
+    width:100%;
+    height: 100%;
+    text-decoration: none;
+    
+}
+
+.bg-image{
+    height: 70%;
+}
+.project .w-100{
+    
+    width: 100%;
+    height:100% !important;
+    border-radius: 5px;
+    object-fit: cover;
+    display: inline-block;
+    
+
+}
+
+.project p{
+    font-size: 12px;
+    color: grey;
+}
+.project h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    max-width: 360px;
+    height: max-content;
+}
+

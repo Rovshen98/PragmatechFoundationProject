@@ -29,10 +29,10 @@ def createnews():
     if request.method=="POST":
         file = request.files['file']
         filename=file.filename
-        filename = os.path.join('../static/uploads/', filename)
+        filename = os.path.join('static/uploads/', filename)
 
         file.save(filename)
-      
+        
         day=request.form["day"]
         month=request.form["month"]
         time=request.form["time"]
@@ -40,6 +40,7 @@ def createnews():
         content=request.form["content"]
      
         data = User(
+            id=id,
             day=day,
             month=month,
             time=time,
@@ -58,7 +59,19 @@ def index():
     return render_template("index.html",blog=News)
     
 
+@app.route("/read/<int:id>")
+def read(id):
+    News=User.query.all()
+    
+    for news in News:
+        if id==news.id:
+            i=news
+    return render_template("read.html",news=i)
 
+
+    
+    
+    return render_template("read.html",news=News)
 
 
 if __name__=="__main__":

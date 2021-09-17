@@ -1,0 +1,415 @@
+/* small devices */
+@media only screen and (max-width:450px){
+    .loader{
+        width: 80px;
+        height: 80px;
+    }
+::-webkit-scrollbar{
+    display: none;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    border-radius:0px;
+    margin:0px;
+    padding:15px;
+    position: relative;
+    overflow-x: hidden;
+    animation: normal;
+    
+}
+header{
+    position:fixed;
+    width: 100%;
+    height: 50px;
+    padding:10px 15px 0px 10px;
+    top: 0;
+    right:0;
+    background-color: #222222;
+    z-index: 99;
+} 
+
+.logo img{
+    width: 140px;
+    height: 50px;
+}
+.burger{
+   display: block;
+   width: 15px;
+   height: 12px;
+   margin-right: 3px;
+   margin-bottom:7px;
+}
+.burger div{
+    width: 14px;
+    height: 2px;
+    margin-top: 2px;
+}
+.burger:hover  div{
+   background-color: rgba(218, 214, 231, 0.808) ;
+}
+
+.menu{
+    
+align-content:center;
+width: 230px;
+height:calc(100% - 50px);
+top: 49px;
+right: 0px;
+background-color: #222222;
+position:absolute;
+transform: translateX(100%);
+opacity: 0;
+transition: 0.5s ease-in;
+}
+.active{
+align-content:center;
+width: 230px;
+height:calc(100% - 50px);
+top: 49px;
+right: 0px;
+background-color: #222222;
+position:fixed;
+transform: translateX(0%);
+display: block;
+opacity:1;
+
+}
+.menu ul{
+display: flex;
+flex-direction:column;
+justify-content: space-around;
+padding: 20px 0px 0px 15px;
+height: 300px;
+position:fixed;
+
+}
+
+/* content */
+.education-head{
+    width:calc(100% + 140px);
+    color:white;
+    height:70px;
+    padding: 0px 70px;
+    border-bottom: 1px solid rgba(167, 164, 175, 0.747);
+    border-top:1px solid rgba(167, 164, 175, 0.747);
+    margin-left:-70px;
+    margin-top:38px
+}
+.education-head h1{
+    font-size: 22px;
+    
+    padding-top: 20px;
+}
+
+
+h2{
+    color: white;
+    padding-top: 10px;
+    font-size:18px ;
+}
+h3{
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.star{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    
+}
+.star_1{
+    width: 90%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(167, 164, 175, 0.747);
+    padding: 15px 0px;
+    margin: 7px 0px;
+    
+}
+.star a{
+width: 90%;
+height:80%;
+}
+.star_1 img{
+    width: 100%;
+    height: 100%;
+    object-fit:inherit;
+    cursor: pointer;
+}
+.star_1 h2{
+   font-size: 18px;
+}
+
+.footer{
+    width: calc(100% + 30px);
+    margin:0px 0px 0px -15px;  
+    position: absolute;
+    bottom: 0;
+ 
+}
+.footer li{
+    font-size: 11px;
+}
+button.top-to{
+    width: 45px;
+    height: 45px;
+}
+
+}
+@media only screen and (min-width:451px) and (max-width:802px){
+    .loader{
+        width: 80px;
+        height: 80px;
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    .main{
+        width: 100%;
+        min-height: 100vh;
+        border-radius:0px;
+        margin:0px;
+        padding:15px;
+        position: relative;
+        overflow-x: hidden;
+        animation: normal;
+    }
+   header{
+       position:fixed;
+       width: 100%;
+       height: 73.5px;
+       padding:10px 10px 0px 10px;
+       top: 0;
+       right:0;
+       background-color: #222222;
+       z-index: 99;
+       
+   }
+   .burger{
+       display: block;
+   }
+    
+   .burger:hover  div{
+    background-color: rgba(218, 214, 231, 0.808) ;
+}
+
+.menu{
+        
+        align-content:center;
+        width: 300px;
+        height:calc(100% - 73.5px);
+        top: 73.5px;
+        right: 0px;
+        background-color: #222222;
+        position:absolute;
+        transform: translateX(100%);
+        opacity: 0;
+        transition: 0.5s ease-in;
+    }
+    .active{
+        align-content:center;
+        width: 300px;
+        height:calc(100% - 73.5px);
+        top: 73.5px;
+        right: 0px;
+        background-color: #222222;
+        position:fixed;
+        transform: translateX(0%);
+        display: block;
+        opacity:1;
+       
+    }
+    .menu ul{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-around;
+        padding: 20px 0px 0px 15px;
+        height: 300px;
+        position:fixed;
+       
+    }
+    /* content */
+    .education-head{
+        width:calc(100% + 140px);
+        color:white;
+        height:100px;
+        padding: 0px 70px;
+        border-bottom: 1px solid rgba(167, 164, 175, 0.747);
+        border-top:1px solid rgba(167, 164, 175, 0.747);
+        margin-left:-70px;
+        margin-top:59px;
+    }
+    .education-head h1{
+        padding-top: 25px;
+    }
+  
+    
+    h2{
+        color: white;
+        padding-top: 10px;
+    }
+    h3{
+        color: white;
+        text-align: center;
+        padding-bottom: 10px;
+        margin-top: 10px;
+    }
+    .star{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+        
+        
+    }
+    .star_1{
+        width: 60%;
+        min-width: 360px;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(167, 164, 175, 0.747);
+        padding: 15px 0px;
+        margin: 7px 0px;
+    
+    }
+    .star_1 img{
+        width: 320px;
+        height: 170px;
+        object-fit:inherit;
+        cursor: pointer;
+    }
+    .star_1 img:hover{
+        border: 1px solid white;
+        opacity: 0.7;
+    }
+    .star_1 h2{
+        color:white
+    }
+    
+    
+    
+  
+    .footer{
+        width: calc(100% + 30px);
+        margin:0px 0px 0px -15px;
+        height: 40px;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+
+@media only screen and (min-width:800px) and (max-width:992px){
+    .loader{
+        width: 80px;
+        height: 80px;
+    }
+   
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    .main{
+        width: 100%;
+        min-height: 100vh;
+        border-radius:0px;
+        margin:0px;
+        padding:15px;
+        position: relative;
+        overflow-x: hidden;
+        animation: normal;
+    }
+   header{
+       position:fixed;
+       width: 100%;
+       height: 73.5px;
+       padding:10px 10px 0px 10px;
+       top: 0;
+       right:0;
+       background-color: #222222;
+       
+       
+   }
+   .burger{
+       display: block;
+   }
+    
+   .burger:hover  div{
+    background-color: rgba(218, 214, 231, 0.808) ;
+}
+    .menu{
+        
+        align-content:center;
+        width: 300px;
+        height:calc(100% - 73.5px);
+        top: 73.5px;
+        right: 0px;
+        background-color: #222222;
+        position:absolute;
+        transform: translateX(100%);
+        opacity: 0;
+        transition: 0.5s ease-in;
+    }
+    .active{
+        align-content:center;
+        width: 300px;
+        height:calc(100% - 73.5px);
+        top: 73.5px;
+        right: 0px;
+        background-color: #222222;
+        position:fixed;
+        transform: translateX(0%);
+        display: block;
+        opacity:1;
+       
+    }
+    .menu ul{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-around;
+        padding: 20px 0px 0px 15px;
+        height: 300px;
+        position:fixed;
+       
+    }
+    .education-head{
+        width:calc(100% + 140px);
+        color:white;
+        height:100px;
+        padding: 0px 70px;
+        border-bottom: 1px solid rgba(167, 164, 175, 0.747);
+        border-top:1px solid rgba(167, 164, 175, 0.747);
+        margin-left:-70px;
+        margin-top:59px;
+    }
+    .education-head h1{
+        padding-top: 25px;
+    }
+   
+    .star{
+        margin-bottom: 50px;
+    }
+    .footer{
+        width: calc(100% + 30px);
+        margin:0px 0px 0px -15px;
+        height: 40px;
+        position: absolute;
+        bottom: 0;
+    }
+}
+@media only screen and (min-width:1274px){
+    .main{
+        max-width: 1197px;
+    }
+}

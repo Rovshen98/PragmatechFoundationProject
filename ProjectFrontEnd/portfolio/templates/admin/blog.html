@@ -1,0 +1,60 @@
+{% extends "./admin/base.html" %}
+
+{% block title %}index{% endblock %}
+
+{% block head %}  
+<form action="/admin/blog" method="POST">
+<div class="mb-3" style="margin-top: 30px;">
+    
+    <input type="file" class="form-control" id="formGroupExampleInput" name="blog-file" placeholder="image">
+  </div>
+  <div class="mb-3">
+    
+    <input type="text" class="form-control" id="formGroupExampleInput2" name="blog-title" placeholder="title">
+  </div> 
+  <div class="mb-3">
+    
+    <input type="text" class="form-control" id="formGroupExampleInput2" blog="blog-text" placeholder="text">
+  </div>
+
+  <div class="mb-3">
+    
+    <input type="text" class="form-control" id="formGroupExampleInput2" name="blog-link" placeholder="link">
+  </div>
+  
+  <br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+  <br>
+
+
+
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">text</th>
+        
+        
+      </tr>
+    </thead>
+    <tbody>
+      {% for blog in blogs %}
+      <tr>
+        <th >{{blog.id}}</th>
+        <td>{{blog.title}}</td>
+        <td>
+            <a href="">delete</a>
+            <a href="">update</a>
+        </td>
+        
+      </tr>
+      {% endfor %}
+      
+      
+    </tbody>
+  </table>
+
+{% endblock %}
+

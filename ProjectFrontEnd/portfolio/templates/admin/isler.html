@@ -1,0 +1,50 @@
+{% extends "./admin/base.html" %}
+
+{% block title %}index{% endblock %}
+
+{% block head %}
+<form action="">
+<div class="mb-3" style="margin-top: 30px;">
+    
+    <input type="file" class="form-control" id="formGroupExampleInput" name="isler-file" placeholder="image">
+  </div>
+  <div class="mb-3">
+    
+    <input type="text" class="form-control" id="formGroupExampleInput2" name="isler-date" placeholder="text">
+  </div>
+
+  <div class="mb-3">
+    
+    <input type="text" class="form-control" id="formGroupExampleInput2" name="isler-text" placeholder="text">
+  </div><br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>  <Br>
+
+<!-- table--- -->
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">date</th>
+        <th scope="col">text</th>
+        
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th >1</th>
+        <td>date</td>
+        <td>text</td>
+        <td>
+            <a href="">delete</a>
+            <a href="">update</a>
+        </td>
+        
+      </tr>
+      
+      
+    </tbody>
+  </table>
+{% endblock %}
