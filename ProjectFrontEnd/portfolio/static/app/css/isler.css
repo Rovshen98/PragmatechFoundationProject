@@ -78,6 +78,7 @@ body{
 .project p{
     font-size: 12px;
     color: grey;
+    margin-bottom: 8px;
 }
 .project h3{
     font-size: 18px;
