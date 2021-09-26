@@ -18,30 +18,34 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
 
               <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                <a class="nav-link active text-white" aria-current="page" href="/admin">Home</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Təhsil</a>
+                <a class="nav-link text-white" href="/admin/tehsil">Təhsil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">İşlər</a>
+                <a class="nav-link text-white" href="/admin/isler">İşlər</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Blog</a>
+                <a class="nav-link text-white" href="/admin/blog">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Fikirlər</a>
+                <a class="nav-link text-white" href="/admin/fikirler">Fikirlər</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Əlaqə</a>
+                <a class="nav-link text-white" href="/admin/contact">Əlaqə</a>
               </li>
-
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/logout">Çıxış</a>
+              </li>
             </ul>
         </div>
       </nav>
 
-      {% block head %} {% endblock %}
+      {% block head %}
+      
+      {% endblock %}
 
     <script src="../../static/admin/bootstrap.js"></script>
 </body>

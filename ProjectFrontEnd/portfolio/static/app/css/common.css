@@ -144,7 +144,10 @@ header{
         background-color:rgba(218, 214, 231, 0.808) ;
         border-radius: 5px;
     }
-
+.logo{
+    width: 200px;
+    height: 70px;
+}
 .logo img{
     width: 200px;
     height: 70px;

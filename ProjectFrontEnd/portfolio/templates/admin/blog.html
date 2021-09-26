@@ -3,7 +3,7 @@
 {% block title %}index{% endblock %}
 
 {% block head %}  
-<form action="/admin/blog" method="POST">
+<form action="/admin/blog" method="POST"  enctype = "multipart/form-data">
 <div class="mb-3" style="margin-top: 30px;">
     
     <input type="file" class="form-control" id="formGroupExampleInput" name="blog-file" placeholder="image">
@@ -14,7 +14,7 @@
   </div> 
   <div class="mb-3">
     
-    <input type="text" class="form-control" id="formGroupExampleInput2" blog="blog-text" placeholder="text">
+    <input type="text" class="form-control" id="formGroupExampleInput2" name="blog-text" placeholder="text">
   </div>
 
   <div class="mb-3">
@@ -45,8 +45,8 @@
         <th >{{blog.id}}</th>
         <td>{{blog.title}}</td>
         <td>
-            <a href="">delete</a>
-            <a href="">update</a>
+            <a href="blog/delete/{{blog.id}}">delete</a>
+            <a href="blog/update/{{blog.id}}">update</a>
         </td>
         
       </tr>

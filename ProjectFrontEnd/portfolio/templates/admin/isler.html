@@ -3,14 +3,19 @@
 {% block title %}index{% endblock %}
 
 {% block head %}
-<form action="">
+<form action="/admin/isler" method="POST"  enctype = "multipart/form-data" >
 <div class="mb-3" style="margin-top: 30px;">
     
     <input type="file" class="form-control" id="formGroupExampleInput" name="isler-file" placeholder="image">
   </div>
   <div class="mb-3">
     
-    <input type="text" class="form-control" id="formGroupExampleInput2" name="isler-date" placeholder="text">
+    <input type="text" class="form-control" id="formGroupExampleInput2" name="isler-date" placeholder="date">
+  </div>
+
+  <div class="mb-3">
+    
+    <input type="text" class="form-control" id="formGroupExampleInput2" name="isler-link" placeholder="link">
   </div>
 
   <div class="mb-3">
@@ -26,23 +31,24 @@
     <thead>
       <tr>
         <th scope="col">Id</th>
-        <th scope="col">date</th>
-        <th scope="col">text</th>
+        <th scope="col">Text</th>
+        
         
         
       </tr>
     </thead>
     <tbody>
+      {% for is in isler %}
       <tr>
-        <th >1</th>
-        <td>date</td>
-        <td>text</td>
+        <th>{{is.id}}</th>
+        <td>{{is.text}}</td>
         <td>
-            <a href="">delete</a>
-            <a href="">update</a>
+            <a href="isler/delete/{{is.id}}">delete</a>
+            <a href="isler/update/{{is.id}}">update</a>
         </td>
         
       </tr>
+      {% endfor %}
       
       
     </tbody>

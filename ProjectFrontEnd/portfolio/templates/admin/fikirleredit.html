@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/admin/bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/admin/fikirler/update/{{fikirler.id}}" method="POST"  enctype = "multipart/form-data">
+        <div class="mb-3" style="margin-top: 30px;">
+            
+            <input type="file" class="form-control"  id="formGroupExampleInput" name="fikirler-file" placeholder="image">
+          </div>
+          <div class="mb-3">
+            
+            <input type="text" class="form-control" value="{{fikirler.author}}" id="formGroupExampleInput2" name="fikirler-author" placeholder="author">
+          </div> 
+          <div class="mb-3">
+            
+            <input type="text" class="form-control" value="{{fikirler.text}}" id="formGroupExampleInput2" name="fikirler-text" placeholder="text">
+          </div>
+        
+          <div class="mb-3">
+            
+            <input type="text" class="form-control" value="{{fikirler.title}}" id="formGroupExampleInput2" name="fikirler-title" placeholder="title">
+          </div>
+          
+          <br>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+          <br>
+          <script src="../../static/admin/bootstrap.js"></script>
+</body>
+</html>

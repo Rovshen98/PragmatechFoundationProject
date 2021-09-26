@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/admin/bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/admin/isler/update/{{isler.id}}" method="POST"  enctype = "multipart/form-data">
+        <div class="mb-3" style="margin-top: 30px;">
+            
+            <input type="file" class="form-control"  id="formGroupExampleInput" name="isler-file" placeholder="image">
+          </div>
+          <div class="mb-3">
+            
+            <input type="text" class="form-control" value="{{isler.title}}" id="formGroupExampleInput2" name="isler-title" placeholder="title">
+          </div> 
+          <div class="mb-3">
+            
+            <input type="text" class="form-control" value="{{isler.text}}" id="formGroupExampleInput2" name="isler-text" placeholder="text">
+          </div>
+        
+          <div class="mb-3">
+            
+            <input type="text" class="form-control" value="{{isler.link}}" id="formGroupExampleInput2" name="isler-link" placeholder="link">
+          </div>
+          
+          <br>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+          <br>
+          <script src="../../static/admin/bootstrap.js"></script>
+</body>
+</html>

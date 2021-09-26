@@ -3,14 +3,19 @@
 {% block title %}index{% endblock %}
 
 {% block head %}  
-<form action="">
-<div class="mb-3" style="margin-top: 30px;">
+<form action="/admin/tehsil" method="POST"  enctype = "multipart/form-data">
+<div iclass="mb-3" style="margin-top: 30px;">
     
-    <input type="file" class="form-control" id="formGroupExampleInput" placeholder="image">
+    <input type="file" class="form-control" id="formGroupExampleInput" name="tehsil-file" placeholder="image">
   </div>
   <div class="mb-3">
     
-    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="text">
+    <input type="text" class="form-control" id="formGroupExampleInput2" name="tehsil-link" placeholder="link">
+  </div>
+
+  <div class="mb-3">
+    
+    <input type="text" class="form-control" id="formGroupExampleInput2" name="tehsil-text" placeholder="text">
   </div> <br>
   <button type="submit" class="btn btn-primary">Submit</button>
   
@@ -29,16 +34,18 @@
       </tr>
     </thead>
     <tbody>
+
+      {% for tehsil in tehsiller %}
       <tr>
-        <th >1</th>
-        <td>Mark</td>
+        <th >{{tehsil.id}}</th>
+        <td>{{tehsil.text}}</td>
         <td>
-            <a href="">delete</a>
-            <a href="">update</a>
+            <a href="tehsil/delete/{{tehsil.id}}">delete</a>
+            <a href="tehsil/update/{{tehsil.id}}">update</a>
         </td>
         
       </tr>
-      
+      {% endfor %}
       
     </tbody>
   </table>
