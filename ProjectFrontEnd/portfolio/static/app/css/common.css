@@ -24,8 +24,9 @@ html{
     transition: all 1s ease;
     display: flex;
     justify-content: center;
-align-items: center;
-text-align: center;
+    align-items: center;
+    text-align: center;
+    z-index: 999999;
 }
 .wrapper-finish{
    display: none;
@@ -98,7 +99,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
+    z-index: 10;
    
 }
 .menu{
@@ -109,6 +110,7 @@ header{
     justify-content: space-around;
     font-size: 15px;
     list-style: none;
+    margin-bottom: 0;
    
 
 
@@ -132,6 +134,7 @@ header{
     display:none;
     cursor: pointer;
     margin-right: 10px;
+    z-index: 999999;
      }
      .burger:hover div{
         background-color: rgba(218, 214, 231, 0.507);

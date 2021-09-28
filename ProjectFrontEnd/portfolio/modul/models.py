@@ -37,3 +37,5 @@ class Contact(db.Model):
     message=db.Column(db.String(1000));
 
 
+
+

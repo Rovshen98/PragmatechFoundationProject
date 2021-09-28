@@ -37,6 +37,16 @@ body{
 h2{
     color: white;
     padding-top: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+
+h2 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    margin-left: 2%;
 }
 h3{
     color: white;
@@ -51,24 +61,27 @@ h3{
     
 }
 .star_1{
-    width: 49%;
+    width: 46%;
     height: max-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(167, 164, 175, 0.747);
+    background-color:#2b2929 ;
     padding: 15px 0px;
+    margin: 2%;
+    border-radius: 40px;
 
 }
 .star_1 img{
     width: 350px;
     height: 200px;
-    object-fit:inherit;
+    border-radius: 40px;
+    object-fit:cover;
     cursor: pointer;
 }
 .star_1 img:hover{
-    border: 1px solid white;
+   
     opacity: 0.7;
 }
 .star_1 h2{

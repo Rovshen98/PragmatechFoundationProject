@@ -32,7 +32,9 @@ header{
 
 .logo img{
     width: 140px;
-    height: 50px;
+    height: 58px;
+    padding-top: 3px;
+    
 }
 .burger{
    display: block;
@@ -114,7 +116,7 @@ h3{
     text-align: center;
     padding-bottom: 10px;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .star{
     display: flex;
@@ -125,24 +127,25 @@ h3{
 }
 .star_1{
     width: 90%;
-    height: max-content;
+    height: 65vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(167, 164, 175, 0.747);
+    
     padding: 15px 0px;
     margin: 7px 0px;
     
 }
-.star a{
+.star_1 a{
 width: 90%;
 height:80%;
 }
 .star_1 img{
     width: 100%;
     height: 100%;
-    object-fit:inherit;
+    
+    object-fit:cover;
     cursor: pointer;
 }
 .star_1 h2{
@@ -246,7 +249,7 @@ button.top-to{
         border-bottom: 1px solid rgba(167, 164, 175, 0.747);
         border-top:1px solid rgba(167, 164, 175, 0.747);
         margin-left:-70px;
-        margin-top:59px;
+        margin-top:61px;
     }
     .education-head h1{
         padding-top: 25px;
@@ -261,7 +264,7 @@ button.top-to{
         color: white;
         text-align: center;
         padding-bottom: 10px;
-        margin-top: 10px;
+        margin-top: 25px;
     }
     .star{
         display: flex;
@@ -279,7 +282,7 @@ button.top-to{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        border: 1px solid rgba(167, 164, 175, 0.747);
+        
         padding: 15px 0px;
         margin: 7px 0px;
     
@@ -287,7 +290,7 @@ button.top-to{
     .star_1 img{
         width: 320px;
         height: 170px;
-        object-fit:inherit;
+        object-fit:cover;
         cursor: pointer;
     }
     .star_1 img:hover{
@@ -391,7 +394,7 @@ button.top-to{
         border-bottom: 1px solid rgba(167, 164, 175, 0.747);
         border-top:1px solid rgba(167, 164, 175, 0.747);
         margin-left:-70px;
-        margin-top:59px;
+        margin-top:61px;
     }
     .education-head h1{
         padding-top: 25px;

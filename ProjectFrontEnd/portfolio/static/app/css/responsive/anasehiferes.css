@@ -31,7 +31,8 @@ header{
 
 .logo img{
     width: 140px;
-    height: 50px;
+    height: 58px;
+    padding-top: 3px;
 }
 .burger{
    display: block;

@@ -38,6 +38,8 @@ body{
    height: max-content;
    display: flex;
    justify-content:flex-start;
+   flex-direction: row;
+
    margin: 20px 0;
    flex-wrap: wrap;
 }
@@ -70,7 +72,7 @@ body{
     width: max-content;
     height: max-content;
     
-    background-color: rgba(0, 0, 0, 0.363);
+    background-color: rgba(0, 0, 0, 0.575);
     color: white;
     font-weight:bold;
     font-size: 1.5vw;

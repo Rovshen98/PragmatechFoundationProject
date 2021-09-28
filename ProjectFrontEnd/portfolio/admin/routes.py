@@ -4,6 +4,8 @@ from werkzeug.utils import import_string
 from modul import app,db
 from modul.models import *
 from modul.__init__ import *
+import sqlite3
+
 
 
 import os
@@ -12,22 +14,26 @@ import os
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
 app.config['UPLOAD_FOLDER']= '/static/app/img'
 
-
-security={
+user={
     "username":"Rovshen98",
     "password":"Melanxolik98"
 }
 
 @app.route("/login", methods=["GET","POST"])
 def log():
+    
+    
     if request.method=="POST":
         username=request.form["username"]
         pas=request.form["pass"]
 
-        if username==security["username"] and pas==security["password"]:
+        
+
+        if username==user["username"] and pas==user["password"]:
             resp = make_response(redirect("/admin"))
             resp.set_cookie('LoginStatus', "True")
             return resp
+            
     return render_template("admin/Login_v16/index.html")
 
 def login_required(login):
@@ -40,8 +46,9 @@ def login_required(login):
 @app.route("/logout")
 def logout():
     
-    
-    return redirect("/login")
+    resp = make_response(redirect("/login"))
+    resp.set_cookie('LoginStatus', expires=0)
+    return resp
 
 @app.route("/admin")
 def adminindex():
@@ -67,7 +74,7 @@ def adminfikirler():
         db.session.add(fikirler)
         db.session.commit()
         return redirect("/admin/fikirler")
-    return render_template("admin/fikirler.html",fikirler=fikirler)
+    return login_required(render_template ("admin/fikirler.html", fikirler=fikirler))
 
 @app.route("/admin/fikirler/delete/<int:id>") 
 def fikirler_delete(id):
@@ -97,7 +104,7 @@ def fikirlerupdate(id):
         
 
         return redirect("/admin/fikirler")
-    return render_template("admin/fikirleredit.html",fikirler=fikirler)
+    return login_required(render_template ("admin/fikirleredit.html", fikirler=fikirler))
 # /////////////////////////////////////////////////
 
 
@@ -123,7 +130,7 @@ def adminisler():
         db.session.add(isler)
         db.session.commit()
         return redirect("/admin/isler")
-    return render_template("admin/isler.html",isler=isler)
+    return login_required(render_template ("admin/isler.html",isler=isler))
 
 @app.route("/admin/isler/delete/<int:id>") 
 def isler_delete(id):
@@ -153,7 +160,7 @@ def islerupdate(id):
         
 
         return redirect("/admin/isler")
-    return render_template("admin/isleredit.html",isler=isler)
+    return login_required(render_template ("admin/isleredit.html",isler=isler))
 
 # /////////////////////////////////////////////////////
 
@@ -178,7 +185,7 @@ def adminblog():
         db.session.add(blog)
         db.session.commit()
         return redirect("/admin/blog")
-    return render_template("admin/blog.html",blogs=blogs)
+    return login_required(render_template ("admin/blog.html",blogs=blogs))
 
 @app.route("/admin/blog/delete/<int:id>") 
 def blog_delete(id):
@@ -208,7 +215,7 @@ def blogupdate(id):
         
 
         return redirect("/admin/blog")
-    return render_template("admin/blogedit.html",blog=blog)
+    return login_required(render_template ("admin/blogedit.html",blog=blog))
 
 # /////////////////////////////////////////////////////////////
 
@@ -231,7 +238,7 @@ def admintehsiller():
         db.session.add(tehsil)
         db.session.commit()
         return redirect("/admin/tehsil")
-    return render_template("admin/tehsil.html",tehsiller=tehsiller)
+    return login_required(render_template ("admin/tehsil.html",tehsiller=tehsiller))
 
 @app.route("/admin/tehsil/delete/<int:id>") 
 def tehsil_delete(id):
@@ -261,12 +268,13 @@ def tehsilupdate(id):
         
 
         return redirect("/admin/tehsil")
-    return render_template("admin/tehsiledit.html",tehsil=tehsil)
+    return login_required(render_template ("admin/tehsiledit.html",tehsil=tehsil))
     
 @app.route("/admin/contact")
 def contact():
     contacts=Contact.query.all()
-    return render_template("admin/contact.html", contacts=contacts)
+    return login_required(render_template ("admin/contact.html",contacts=contacts))
+
 
 @app.route("/admin/contact/delete/<int:id>") 
 def contact_delete(id):
@@ -279,5 +287,6 @@ def contact_delete(id):
 @app.route("/admin/contact/<int:id>")
 def contactsingle(id):
     contacts=Contact.query.all()
-    return render_template("admin/contactsingle.html",contacts=contacts )
+    return login_required(render_template ("admin/contactsingle.html",contacts=contacts))
+
 

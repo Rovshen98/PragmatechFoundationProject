@@ -4,7 +4,7 @@ from modul import app
 from modul.models import *
 
 
-@app.route("/esassehife")
+@app.route("/")
 def blueprint():
     
     return render_template ("app/index.html")
@@ -13,12 +13,14 @@ def blueprint():
 def appblog():
     
     blogs= Blog.query.all()
+    blogs=blogs[::-1]
     return render_template("app/blog.html",blogs=blogs)
 
 @app.route("/app/isler", methods=["GET","POST"])
 def appisler():
     
     isler= Isler.query.all()
+    isler=isler[::-1]
     return render_template("app/isler.html",isler=isler)
 
 @app.route("/app/fikirler", methods=["GET","POST"])

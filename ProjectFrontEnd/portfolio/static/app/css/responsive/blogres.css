@@ -31,7 +31,8 @@ header{
 
 .logo img{
     width: 140px;
-    height: 50px;
+    height: 58px;
+    padding-top: 3px;
 }
 .burger{
    display: block;
@@ -107,7 +108,7 @@ position:fixed;
     height: max-content;
     display: flex;
     justify-content:flex-start;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin: 50px 0;
  }
  
@@ -120,10 +121,11 @@ position:fixed;
      position: relative;
  }
  .blog .title{
-     font-size: 4vw;
+     font-size: 3vw;
  }
  .blog .content{
-     font-size: 4vw;
+     font-size: 3vw;
+     visibility: visible;
  }
 
 
@@ -226,7 +228,7 @@ button.top-to{
         border-bottom: 1px solid rgba(167, 164, 175, 0.747);
         border-top:1px solid rgba(167, 164, 175, 0.747);
         margin-left:-70px;
-        margin-top:59px;
+        margin-top:61px;
     }
     .blog-head h1{
         padding-top: 25px;
@@ -238,24 +240,26 @@ button.top-to{
         width: 100%;
         height: max-content;
         display: flex;
-        justify-content:flex-start;
+        flex-direction: column;
+        
         margin: 50px 0;
-        flex-wrap: wrap;
+        
      }
      
      .blog1{
-         width: 45%;
-         height: 22vw;
+         width: 90%;
+         height: 45vw;
          overflow: hidden;
-         border-radius: 5%;
+         border-radius: 20px;
          margin:2.5% 2.5%;
          position: relative;
      }
      .blog1 .title{
-         font-size: 2.5vw;
+         font-size: 2vw;
      }
      .blog1 .content{
-         font-size: 2.5vw;
+         font-size: 2vw;
+         visibility: visible;
      }
 
     .footer{
@@ -350,7 +354,7 @@ button.top-to{
         border-bottom: 1px solid rgba(167, 164, 175, 0.747);
         border-top:1px solid rgba(167, 164, 175, 0.747);
         margin-left:-70px;
-        margin-top:59px;
+        margin-top:61px;
     }
     .blog-head h1{
         padding-top: 25px;
@@ -360,6 +364,7 @@ button.top-to{
         width: 100%;
         height: max-content;
         display: flex;
+        flex-direction: row;
         justify-content:flex-start;
         margin: 50px 0;
         flex-wrap: wrap;

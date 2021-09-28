@@ -38,6 +38,7 @@ body{
    width: 100%;
    height: max-content;
    display: flex;
+   flex-direction: row;
    justify-content:flex-start;
    margin: 20px 0;
    flex-wrap: wrap;

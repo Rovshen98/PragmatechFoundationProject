@@ -31,7 +31,8 @@ header{
 
 .logo img{
     width: 140px;
-    height: 50px;
+    height: 58px;
+    padding-top: 3px;
 }
 .burger{
    display: block;
@@ -146,7 +147,7 @@ position:fixed;
 }
 .icon-mail img{
     width: 28px;
-    height:32px;
+    height:22px;
     cursor: pointer;
 }
 
@@ -329,7 +330,7 @@ button.top-to{
         border-bottom: 1px solid rgba(167, 164, 175, 0.747);
         border-top:1px solid rgba(167, 164, 175, 0.747);
         margin-left:-70px;
-        margin-top:59px;
+        margin-top:61px;
     }
     .contact-head h1{
         
@@ -382,7 +383,7 @@ button.top-to{
     }
     .icon-mail img{
         width: 30px;
-        height:33px;
+        height:25px;
         cursor: pointer;
     }
     
@@ -453,7 +454,7 @@ button.top-to{
     .contact-button{
         width: 163.1px;
         height: 39px;
-        padding:11.2px 29.4px 11.2px 29.4px;
+        padding:0px 27px 0px 27px;
         background-color: #222222;
         border: 2px solid rgb(74, 97, 202);
         border-radius: 30px;
@@ -556,7 +557,7 @@ button.top-to{
         border-bottom: 1px solid rgba(167, 164, 175, 0.747);
         border-top:1px solid rgba(167, 164, 175, 0.747);
         margin-left:-70px;
-        margin-top:59px;
+        margin-top:61px;
     }
     .contact-head h1{
         padding-top: 25px;
@@ -609,7 +610,7 @@ button.top-to{
     }
     .icon-mail img{
         width: 33px;
-        height:36px;
+        height:28px;
         cursor: pointer;
     }
     
