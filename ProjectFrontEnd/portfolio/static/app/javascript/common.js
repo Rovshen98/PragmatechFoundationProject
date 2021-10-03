@@ -11,13 +11,10 @@ let head_1=document.querySelector(".head_1");
 let burger = document.querySelector(".burger");
 let menu = document.querySelector(".menu");
 
-document.onclick = function(e){
-      
-      if (e.target.className !== 'menu' && e.target.className !== 'burger'){
-      
-      menu.classList.remove("active")
-  }
-};
+
+
+
+
 
 burger.onclick = function() {
      menu.classList.toggle("active");

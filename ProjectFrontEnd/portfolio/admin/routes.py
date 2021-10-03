@@ -4,7 +4,7 @@ from werkzeug.utils import import_string
 from modul import app,db
 from modul.models import *
 from modul.__init__ import *
-import sqlite3
+
 
 
 
