@@ -8,20 +8,20 @@ from werkzeug.utils import secure_filename
 app=Flask(__name__,template_folder="../templates",static_folder="../static")
 
 
-ENV="prod"
+ENV="dev"
 if ENV=="dev":
     app.debug=True  
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:duligidagadi@localhost/lexus'
+    app.config['SQLALCHEMY_DATABASE_URI'] ='postgresql://postgres:duligidagadi@localhost:5433/consult'
 else:
-   app.debug=False
-   app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://jqxscfjjdemkui:637117ed3300f66b596ccfef6da9273177a8dc12a31c8d328b93363dd55f24b1@ec2-3-218-47-9.compute-1.amazonaws.com:5432/d81q09r9plfrbp'
+   app.debug=True
+   app.config['DATABASE_URL'] = 'postgres://njsjkdwpyuoriy:879d60f7955321eb1bee7127e8915e95002eced7b73602e1017d711eda1b7524@ec2-54-204-148-110.compute-1.amazonaws.com:5432/d1mur9nd867b7o'
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']= False
 
-app.config['SECRET_KEY']="mysecret"
+app.config['SECRET_KEY']="secretgarden"
 db=SQLAlchemy(app)
 
-db.create_all()
+
 
 from modul.models import *
 from admin.routes import *
